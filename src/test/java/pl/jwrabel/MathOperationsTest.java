@@ -47,4 +47,97 @@ public class MathOperationsTest {
         // then
         assertEquals(result, 2, 0.0000000001);
     }
+
+    @Test
+    public void factiorial_shouldReturnCorrectResultFor1() throws MyException {
+        // given
+        int x = 1;
+
+        // when
+        int result = MathOperations.factorial(x);
+
+        // then
+        assertEquals(result, 1);
+    }
+
+    @Test
+    public void factiorial_shouldReturnCorrectResultFor0() throws MyException {
+        // given
+        int x = 0;
+
+        // when
+        int result = MathOperations.factorial(x);
+
+        // then
+        assertEquals(result, 1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void factiorial_shouldThrowExceptionForNegative() throws MyException {
+        // given
+        int x = -1;
+
+        // when
+        MathOperations.factorial(x);
+    }
+
+//    @Test
+//    public void factiorial_shouldThrowExceptionForNegative2() throws MyException {
+//        // given
+//        int x = -1;
+//
+//        // when
+//        try {
+//            MathOperations.factorial(x);
+//            assertTrue(false);
+//        } catch (IllegalArgumentException e) {
+//            assertTrue(true);
+//        }
+//    }
+
+    @Test
+    public void factiorial_shouldReturnCorrectResultFor5() throws MyException {
+        // given
+        int x = 5;
+
+        // when
+        int result = MathOperations.factorial(x);
+
+        // then
+        assertEquals(result, 120);
+    }
+
+    @Test
+    public void factiorial_shouldReturnCorrectResultFor12() throws MyException {
+        // given
+        int x = 12;
+
+        // when
+        int result = MathOperations.factorial(x);
+
+        // then
+        assertEquals(result, 479001600);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void factiorial_shouldThrowExceptionForMoreThan12() throws MyException {
+        // given
+        int x = 13;
+
+        // when
+        MathOperations.factorial(x);
+    }
+
+
+//    @Test
+//    public void factiorial_shouldReturnCorrectResultFor1() throws MyException {
+//        // given
+//        int x = 5;
+//
+//        // when
+//        int result = MathOperations.factorial(x);
+//
+//        // then
+//        assertEquals(result, 120);
+//    }
 }
