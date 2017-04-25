@@ -12,6 +12,13 @@ public class Time {
         System.out.println(time1);
 
         Time time2 = new Time("20:30");
+
+        System.out.println("-- czas przed dodaniem godzin --");
+        System.out.println(time2);
+
+        time2.addHours(2);
+
+        System.out.println("-- czas po dodaniu godzin --");
         System.out.println(time2);
     }
 
@@ -37,6 +44,10 @@ public class Time {
     public Time(int hour, int minute) {
         this.hour = hour;
         this.minute = minute;
+    }
+
+    public void addHours(int hours){
+
     }
 
     public int getHour() {
