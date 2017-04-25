@@ -7,8 +7,10 @@ import java.math.BigInteger;
  */
 public class MathOperations {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyException {
+//        MathOperations.divide(10, 20);
     }
+
     public static double divide(double x, double y) throws MyException {
         if (y == 0) {
             throw new MyException();
@@ -18,14 +20,13 @@ public class MathOperations {
     }
 
     public static int factorial(int x) {
-        if(x < 0){
+        if (x < 0) {
             throw new IllegalArgumentException("Cannot calculate factorial from negative");
         }
 
-        if(x > 12){
+        if (x > 12) {
             throw new IllegalArgumentException("Cannot calculate factorial for number greater than 12");
         }
-
 
 
         int result = 1;
