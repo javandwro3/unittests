@@ -12,8 +12,16 @@ public class Point {
         this.y = y;
     }
 
+
     public Point(String text){ // "100,2"
         String[] splitted = text.split(",");
+        // splitted -> { "100", "2" }
+
+
+    }
+
+    public void add(int x, int y){
+
     }
 
     public void add(Point point){

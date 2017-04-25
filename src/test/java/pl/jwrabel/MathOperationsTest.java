@@ -128,6 +128,10 @@ public class MathOperationsTest {
         MathOperations.factorial(x);
     }
 
+    public static void main(String[] args) {
+        System.out.println(MathOperations.factorial(30));
+    }
+
 
 //    @Test
 //    public void factiorial_shouldReturnCorrectResultFor1() throws MyException {
