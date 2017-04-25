@@ -47,12 +47,12 @@ public class Time {
     }
 
     public void addHours(int hours) {
-//        // Sposób 1
+        // Sposób 1
 //        this.hour += hours;
-//        while (hours > 23) {
-//            hours -= 24;
+//        while (this.hour > 23) {
+//            this.hour -= 24;
 //        }
-//
+
 //        // Sposób 2
 //        if (this.hour + hours > 23) {
 //            addHours(hours - 24);
