@@ -12,14 +12,34 @@ public class Point {
         this.y = y;
     }
 
-    public Point(String text) { // "100,2"
+    // "ab,cd"
+    public Point(String text) {
+        if (text == null) {
+            throw new IllegalArgumentException("Cannot parse null String");
+        }
+
         String[] splitted = text.split(",");
-        // splitted -> { "100", "2" }
+        // "100,200".split(",")  -> String[]{ "100", "200" }
 
+        if (splitted.length != 2) {
+            throw new IllegalArgumentException("Wrong number of elements");
+        }
 
+        String xString = splitted[0]; // wyciągnięcie Stringa opisującego x
+        String yString = splitted[1];
+
+        try {
+            x = Integer.parseInt(xString); // zamiana Stringa opisującego x na inta i przypisanie do pola
+            y = Integer.parseInt(yString);
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Wrong coordinates format");
+        }
     }
 
     public static void main(String[] args) {
+        Point p = new Point("ab,cd");
+
+
         Point point1 = new Point(100, 200);
         System.out.println(point1);
 
@@ -40,6 +60,8 @@ public class Point {
         point1.add(point2);
         System.out.println("-- po dodaniu metodą add(Point point)");
         System.out.println(point1);
+
+
     }
 
     public void add(int x, int y) {
@@ -54,6 +76,9 @@ public class Point {
         this.x += x2;
         this.y += y2;
 
+        // LUB
+        this.x += point.getX();
+        this.y += point.getY();
     }
 
     @Override
