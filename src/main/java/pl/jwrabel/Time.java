@@ -7,21 +7,6 @@ public class Time {
     private int hour;
     private int minute;
 
-    public static void main(String[] args) {
-        Time time1 = new Time(20, 30);
-        System.out.println(time1);
-
-        Time time2 = new Time("20:30");
-
-        System.out.println("-- czas przed dodaniem godzin --");
-        System.out.println(time2);
-
-        time2.addHours(2);
-
-        System.out.println("-- czas po dodaniu godzin --");
-        System.out.println(time2);
-    }
-
     // "12:30"
     public Time(String text) {
         if (text == null) {
@@ -46,8 +31,43 @@ public class Time {
         this.minute = minute;
     }
 
-    public void addHours(int hours){
+    public static void main(String[] args) {
+        Time time1 = new Time(20, 30);
+        System.out.println(time1);
 
+        Time time2 = new Time("2:30");
+
+        System.out.println("-- czas przed dodaniem godzin --");
+        System.out.println(time2);
+
+        time2.addHours(-3);
+
+        System.out.println("-- czas po dodaniu godzin --");
+        System.out.println(time2);
+    }
+
+    public void addHours(int hours) {
+//        // Sposób 1
+//        this.hour += hours;
+//        while (hours > 23) {
+//            hours -= 24;
+//        }
+//
+//        // Sposób 2
+//        if (this.hour + hours > 23) {
+//            addHours(hours - 24);
+//        } else {
+//            this.hour += hours;
+//        }
+
+        // Sposób 3
+        this.hour = (((this.hour + hours) % 24) + 24) % 24;
+
+        // Sposób 4
+        this.hour = (this.hour + hours) % 24;
+        if (this.hour < 0) {
+            this.hour = 24 + this.hour;
+        }
     }
 
     public int getHour() {
