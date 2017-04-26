@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 adadasd
 zxc
@@ -23,7 +22,7 @@ asd
 zxc
 ad
 qwe
-=======
+
 abc
 Jestem wredny
 BLA
