@@ -112,4 +112,14 @@ public class Time {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Time time = (Time) o;
+
+        if (hour != time.hour) return false;
+        return minute == time.minute;
+    }
 }
