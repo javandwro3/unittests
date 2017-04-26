@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 adadasd
 zxc
@@ -22,3 +23,18 @@ asd
 zxc
 ad
 qwe
+=======
+abc
+Jestem wredny
+BLA
+a
+b
+S
+
+ss
+s
+
+ss
+s
+sDA
+>>>>>>> 9468b24d774288f056fde29694a3ad1427a7a583
