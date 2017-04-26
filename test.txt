@@ -75,6 +75,11 @@ a
 b
 S
 
+
+dsdfsf
+SDA
+sdfsdsdsdsddd    ddsfsdfdsf			fsddsf			fdsdfd
+
 ss
 s
 
@@ -105,8 +110,3 @@ jestem informatykiem
 ss
 s
 sDA
-<<<<<<< HEAD
-
-=======
->>>>>>> 9468b24d774288f056fde29694a3ad1427a7a583
->>>>>>> 965fa480c672b39b79f8c40a2608a58aac6bdc08
