@@ -61,12 +61,30 @@ public class Time {
 //        }
 
         // Sposób 3
-        this.hour = (((this.hour + hours) % 24) + 24) % 24;
+//        this.hour = (((this.hour + hours) % 24) + 24) % 24;
 
         // Sposób 4
         this.hour = (this.hour + hours) % 24;
         if (this.hour < 0) {
             this.hour = 24 + this.hour;
+        }
+    }
+
+
+    public void addMinutes(int minutes) {
+        int minutesSum = this.minute + minutes;
+
+        // > 0
+        if (minutesSum >= 0) {
+            this.minute = minutesSum % 60;
+
+            int hoursToAdd = minutesSum / 60;
+            addHours(hoursToAdd);
+        } else {
+            this.minute = 60 + minutesSum % 60;
+
+            int hoursToAdd = minutesSum / 60 - 1;
+            addHours(hoursToAdd);
         }
     }
 
