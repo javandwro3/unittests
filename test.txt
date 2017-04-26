@@ -1,7 +1,12 @@
-Hello World
-
+abc
+Jestem wredny
 BLA
+a
+b
+S
 
+ss
+s
 
 SDA
 
@@ -26,3 +31,8 @@ hello world
 
 
 jestem informatykiem
+
+ss
+s
+sDA
+
