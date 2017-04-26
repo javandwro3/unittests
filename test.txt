@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 adadasd
 zxc
@@ -31,7 +32,6 @@ S
 ss
 s
 
-
 SDA
 
 
@@ -55,5 +55,8 @@ SDA
 
 
 Warto sie uczyc javy
+=======
+ss
+>>>>>>> dd7c5959d29734e15f34f673663bcb3b6401b4c7
 s
 sDA
