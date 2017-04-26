@@ -1,6 +1,12 @@
-Hello World
-
+abc
+Jestem wredny
 BLA
+a
+b
+S
+
+ss
+s
 
 
 SDA
@@ -26,3 +32,6 @@ SDA
 
 
 Warto sie uczyc javy
+s
+sDA
+
