@@ -70,11 +70,13 @@ ad
 qwe
 
 abc
+
 Jestem wredny
 BLA
 a
 b
 S
+
 
 
 dsdfsf
@@ -116,3 +118,11 @@ RUMCAJS POWIEDZ KAWA£
 
 
 sdsd
+
+ss
+s
+
+ss
+s
+sDA
+
